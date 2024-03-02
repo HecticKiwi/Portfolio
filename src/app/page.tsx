@@ -1,113 +1,244 @@
+import ContactForm from "@/components/contactForm";
+import FeaturedProject from "@/components/featuredProject";
+import Header from "@/components/header";
+import LinkButton from "@/components/linkButton";
+import NavBar from "@/components/navBar";
+import ScrollArrows from "@/components/scrollArrows";
+import Skill from "@/components/skill";
 import Image from "next/image";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import {
+  SiAmazonaws,
+  SiCss3,
+  SiFirebase,
+  SiGithub,
+  SiLinkedin,
+  SiNextdotjs,
+  SiPostgresql,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="text-lg text-neutral-300">
+      {/* Navbar */}
+      <NavBar />
+
+      {/* Hero */}
+      <section className="relative grid min-h-[100dvh] place-content-center text-center bg-dot-white/[0.2]">
+        {/* Radial fade bg */}
+        <div className="pointer-events-none absolute inset-0 bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
+
+        <h1 className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text pb-5 text-5xl font-bold text-transparent sm:pb-8 sm:text-7xl">
+          Danny Duong
+        </h1>
+        <h2 className="text-xl text-neutral-500 sm:text-2xl">
+          Student and Web Developer.
+        </h2>
+
+        <ScrollArrows />
+      </section>
+
+      {/* About */}
+      <section className="mx-auto max-w-screen-lg p-8">
+        <Header id="about" text={"About Me"} />
+
+        <div className="relative mx-auto mb-8 aspect-square w-40 sm:float-start sm:mb-4 sm:mr-8 sm:w-40 md:w-52">
+          <Image
+            src={"/danny.jpg"}
+            alt={"Danny"}
+            fill
+            className="rounded-full"
+          />
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+        <div className="space-y-4 leading-relaxed">
+          <p>
+            Nice to meet you! I&apos;m Danny, a fourth-year software engineering
+            student at the University of Calgary and a passionate web developer.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p>
+            My programming journey started in junior high with Scratch, a
+            high-level visual programming language. I learned core programming
+            concepts while also producing several popular games, including
+            remakes of 2 gamemodes from the rhythm game &quot;osu!&quot;
+            (grade-schoolers play these since their schools don&apos;t allow
+            them to play the actual game 😉).
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
+          <p>
+            Nowadays, I build web applications to extend my formal education
+            with self-learned web-dev skills. When I&apos;m not coding, I&apos;m
+            listening to music or playing rhythm games.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <p>
+            I&apos;m currently interning at Energy Toolbase and developing its
+            ETB Developer web application.
           </p>
-        </a>
-      </div>
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section className="mx-auto max-w-screen-lg p-8">
+        <Header id="skills" text={"My Skills"} />
+
+        <div className="flex flex-wrap justify-around text-center text-xl">
+          <div className="p-6">
+            <h3 className="text-xl font-semibold uppercase text-neutral-500">
+              Languages
+            </h3>
+            <div className="mt-4 space-y-6">
+              <Skill skill="HTML" src={"/skills/languages/HTML5.svg"} />
+              <Skill skill="CSS" src="/skills/languages/CSS3.svg" />
+              <Skill
+                skill="JavaScript"
+                src="/skills/languages/JavaScript.svg"
+              />
+              <Skill
+                skill="TypeScript"
+                src="/skills/languages/TypeScript.svg"
+              />
+            </div>
+          </div>
+
+          <div className="p-6">
+            <h3 className="text-xl font-semibold uppercase text-neutral-500">
+              Frameworks
+            </h3>
+            <div className="mt-4 space-y-6">
+              <Skill skill="React" src="/skills/frameworks/React.svg" />
+              <Skill skill="Next JS" src="/skills/frameworks/NextJs.svg" />
+              <Skill
+                skill="Tailwind"
+                src="/skills/frameworks/TailwindCss.svg"
+              />
+            </div>
+          </div>
+
+          <div className="p-6">
+            <h3 className="text-xl font-semibold uppercase text-neutral-500">
+              Miscellaneous
+            </h3>
+            <div className="mt-4 space-y-6">
+              <Skill skill="Git" src="/skills/miscellaneous/Git.svg" />
+              <Skill skill="GitHub" src="/skills/miscellaneous/GitHub.svg" />
+              <Skill
+                skill="PostgreSQL"
+                src="/skills/miscellaneous/PostgresSQL.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Projects */}
+      <section className="mx-auto max-w-screen-lg p-8">
+        <Header id="projects" text="Featured Projects" />
+
+        <ol className="space-y-20">
+          <li>
+            <FeaturedProject
+              title="Reddot"
+              subtitle="Reddit Clone"
+              imageSrc="/projects/reddot.jpg"
+              summary="A full-stack clone of Reddit's essential features in an elegant UI. Features OAuth authentication, infinite scrolling, and optimistic updates for a smooth user experience."
+              builtWith={
+                <>
+                  <SiNextdotjs />
+                  <SiTypescript />
+                  <SiTailwindcss />
+                  <SiPostgresql />
+                  <SiAmazonaws />
+                </>
+              }
+              builtIn="January 2024"
+              demoHref="https://hk-reddot.vercel.app"
+              codeHref="https://github.com/HecticKiwi/Reddot"
+            />
+          </li>
+          <li>
+            <FeaturedProject
+              title="I'm Slime"
+              subtitle="Online Multiplayer Game"
+              imageSrc="/projects/imSlime.jpg"
+              summary="A realtime online game where players can battle, chat, and customize their slimes. A collaborative effort with my SENG-401 course group, I focused on the realtime chat and other social features."
+              builtWith={
+                <>
+                  <SiReact />
+                  <SiCss3 />
+                  <SiFirebase />
+                </>
+              }
+              builtIn="March 2023"
+              demoHref="https://imslime.onrender.com/"
+              codeHref="https://github.com/KaitoSugimura/SENG401-Group8"
+              reverse
+            />
+          </li>
+          <li>
+            <FeaturedProject
+              title="Epic Seven Memory Game"
+              subtitle="Memory Game Featuring Epic Seven's Characters"
+              imageSrc="/projects/epicSevenMemoryGame.jpg"
+              summary="A React memory game where you must click cards that you have not clicked before. Leverages React state for an interactive experience."
+              builtWith={
+                <>
+                  <SiReact />
+                  <SiCss3 />
+                </>
+              }
+              builtIn="September 2022"
+              demoHref="https://hectickiwi.github.io/Epic-Seven-Memory-Game"
+              codeHref="https://github.com/HecticKiwi/Epic-Seven-Memory-Game"
+            />
+          </li>
+        </ol>
+
+        <p className="mb-6 mt-20 text-center text-2xl font-semibold">
+          More on my{" "}
+          <a
+            href="https://github.com/HecticKiwi?tab=repositories"
+            target="_blank"
+            className="inline-flex items-center gap-1 text-sky-500 hover:underline"
+          >
+            GitHub
+            <FaExternalLinkAlt />
+          </a>
+          .
+        </p>
+      </section>
+
+      {/* Contact */}
+      <section className="mx-auto max-w-screen-lg p-6">
+        <Header id="contact" text="Contact Me" />
+
+        <div className="flex flex-wrap gap-8">
+          <div className="grow basis-[350px] space-y-4">
+            <p className="text-lg">
+              I&apos;m not looking for work at the moment, but my inbox is open
+              if you just want to chat!
+            </p>
+
+            <ContactForm />
+          </div>
+
+          <div className="grow basis-[350px] space-y-4">
+            <p className="text-lg">You can also find me on other platforms:</p>
+            <div className="space-8 flex items-center gap-4">
+              <LinkButton href={"https://github.com/HecticKiwi"}>
+                <SiGithub className="h-6 w-6" />
+                GitHub
+              </LinkButton>
+
+              <LinkButton href={"https://linkedin.com/in/danny-duong-"}>
+                <SiLinkedin className="h-6 w-6" />
+                LinkedIn
+              </LinkButton>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
