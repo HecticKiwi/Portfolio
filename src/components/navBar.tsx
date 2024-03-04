@@ -35,7 +35,7 @@ const NavBar = () => {
           "fixed -right-full z-40 flex h-[100dvh] w-[100dvw] flex-col items-center justify-center gap-4 text-4xl backdrop-blur-md backdrop-brightness-[.15] transition-[right] duration-300",
           show && "right-0",
           // Desktop
-          "md:visible md:inset-x-0 md:inset-y-auto md:top-6 md:mx-auto md:h-auto md:w-fit md:flex-row md:gap-2 md:rounded-full md:border md:border-transparent md:p-2 md:text-base md:backdrop-brightness-50",
+          "md:visible md:inset-x-0 md:inset-y-auto md:top-6 md:mx-auto md:h-auto md:w-fit md:flex-row md:gap-2 md:rounded-full md:border md:border-transparent md:p-2 md:text-base md:backdrop-brightness-50 md:transition",
           scrollY > 0 && "md:border-neutral-500",
         )}
       >
