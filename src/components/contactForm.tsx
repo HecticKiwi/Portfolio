@@ -53,7 +53,7 @@ const ContactForm = () => {
         </div>
         <div className="flex flex-col gap-2">
           <label
-            htmlFor="name"
+            htmlFor="email"
             className="text-sm font-semibold text-neutral-400"
           >
             Email
