@@ -80,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* Skills */}
-      <section className="mx-auto max-w-screen-lg p-8">
+      <section className="mx-auto mt-8 max-w-screen-lg p-8">
         <Header id="skills" text={"My Skills"} />
 
         <div className="flex flex-wrap justify-around text-center text-xl">
@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Featured Projects */}
-      <section className="mx-auto max-w-screen-lg p-8">
+      <section className="mx-auto mt-8 max-w-screen-lg p-8">
         <Header id="projects" text="Featured Projects" />
 
         <ol className="space-y-20">
@@ -210,7 +210,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section className="mx-auto max-w-screen-lg p-6">
+      <section className="mx-auto mt-8 max-w-screen-lg p-8">
         <Header id="contact" text="Contact Me" />
 
         <div className="flex flex-wrap gap-8">
