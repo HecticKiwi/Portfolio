@@ -155,6 +155,7 @@ export default function Home() {
               builtIn="July 2024"
               demoHref="https://hk-memorease.vercel.app"
               codeHref="https://github.com/HecticKiwi/Memorease"
+              reverse
             />
           </li>
           <li>
