@@ -15,6 +15,7 @@ import {
   SiLinkedin,
   SiNextdotjs,
   SiPostgresql,
+  SiPrisma,
   SiReact,
   SiTailwindcss,
   SiTypescript,
@@ -139,6 +140,25 @@ export default function Home() {
         <ol className="space-y-20">
           <li>
             <FeaturedProject
+              title="Memorease"
+              subtitle="Quizlet Clone"
+              imageSrc="/projects/memorease.jpg"
+              summary={`A simple clone of Quizlet's flashcard functionality. Features drag and drop reordering, sorting cards into "Know" and "Still learning" piles, and set importing/exporting.`}
+              builtWith={
+                <>
+                  <SiNextdotjs />
+                  <SiTypescript />
+                  <SiTailwindcss />
+                  <SiPrisma />
+                </>
+              }
+              builtIn="July 2024"
+              demoHref="https://hk-memorease.vercel.app"
+              codeHref="https://github.com/HecticKiwi/Memorease"
+            />
+          </li>
+          <li>
+            <FeaturedProject
               title="Reddot"
               subtitle="Reddit Clone"
               imageSrc="/projects/reddot.jpg"
@@ -174,23 +194,6 @@ export default function Home() {
               demoHref="https://imslime.onrender.com/"
               codeHref="https://github.com/KaitoSugimura/SENG401-Group8"
               reverse
-            />
-          </li>
-          <li>
-            <FeaturedProject
-              title="Epic Seven Memory Game"
-              subtitle="Memory Game Featuring Epic Seven's Characters"
-              imageSrc="/projects/epicSevenMemoryGame.jpg"
-              summary="A React memory game where you must click cards that you have not clicked before. Leverages React state for an interactive experience."
-              builtWith={
-                <>
-                  <SiReact />
-                  <SiCss3 />
-                </>
-              }
-              builtIn="September 2022"
-              demoHref="https://hectickiwi.github.io/Epic-Seven-Memory-Game"
-              codeHref="https://github.com/HecticKiwi/Epic-Seven-Memory-Game"
             />
           </li>
         </ol>
