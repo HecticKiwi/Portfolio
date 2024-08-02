@@ -57,7 +57,7 @@ export default function Home() {
 
         <div className="space-y-4 leading-relaxed">
           <p>
-            Nice to meet you! I&apos;m Danny, a fourth-year software engineering
+            Nice to meet you! I&apos;m Danny, a fifth-year software engineering
             student at the University of Calgary and a passionate web developer.
           </p>
           <p>
@@ -74,8 +74,8 @@ export default function Home() {
             listening to music or playing rhythm games.
           </p>
           <p>
-            I&apos;m currently interning at Energy Toolbase and developing its
-            ETB Developer web application.
+            After graduating from the University of Calgary, I will return to
+            Energy Toolbase no longer as an intern but as a full-time employee.
           </p>
         </div>
       </section>
