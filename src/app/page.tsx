@@ -146,10 +146,10 @@ export default function Home() {
               summary={`A simple clone of Quizlet's flashcard functionality. Features drag and drop reordering, sorting cards into "Know" and "Still learning" piles, and set importing/exporting.`}
               builtWith={
                 <>
-                  <SiNextdotjs />
-                  <SiTypescript />
-                  <SiTailwindcss />
-                  <SiPrisma />
+                  <SiNextdotjs title="Next JS" />
+                  <SiTypescript title="TypeScript" />
+                  <SiTailwindcss title="Tailwind CSS" />
+                  <SiPrisma title="Prisma" />
                 </>
               }
               builtIn="July 2024"
@@ -166,11 +166,11 @@ export default function Home() {
               summary="A full-stack clone of Reddit's essential features in an elegant UI. Features OAuth authentication, infinite scrolling, and optimistic updates for a smooth user experience."
               builtWith={
                 <>
-                  <SiNextdotjs />
-                  <SiTypescript />
-                  <SiTailwindcss />
-                  <SiPostgresql />
-                  <SiAmazonaws />
+                  <SiNextdotjs title="Next JS" />
+                  <SiTypescript title="TypeScript" />
+                  <SiTailwindcss title="Tailwind CSS" />
+                  <SiPostgresql title="PostreSQL" />
+                  <SiAmazonaws title="Amazon AWS" />
                 </>
               }
               builtIn="January 2024"
@@ -186,9 +186,9 @@ export default function Home() {
               summary="A realtime online game where players can battle, chat, and customize their slimes. A collaborative effort with my SENG-401 course group, I focused on the realtime chat and other social features."
               builtWith={
                 <>
-                  <SiReact />
-                  <SiCss3 />
-                  <SiFirebase />
+                  <SiReact title="React" />
+                  <SiCss3 title="CSS" />
+                  <SiFirebase title="Firebase" />
                 </>
               }
               builtIn="March 2023"
