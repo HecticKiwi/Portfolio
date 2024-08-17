@@ -75,7 +75,8 @@ export default function Home() {
           </p>
           <p>
             After graduating from the University of Calgary, I will return to
-            Energy Toolbase no longer as an intern but as a full-time employee.
+            Energy Toolbase no longer as an intern but as a full-time software
+            developer.
           </p>
         </div>
       </section>
