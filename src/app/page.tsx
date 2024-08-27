@@ -15,11 +15,11 @@ import {
   SiLinkedin,
   SiNextdotjs,
   SiPostgresql,
-  SiPrisma,
   SiReact,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import PixiJs from "./pixi.svg";
 
 export default function Home() {
   return (
@@ -141,21 +141,21 @@ export default function Home() {
         <ol className="space-y-20">
           <li>
             <FeaturedProject
-              title="Memorease"
-              subtitle="Quizlet Clone"
-              imageSrc="/projects/memorease.jpg"
-              summary={`A simple clone of Quizlet's flashcard functionality. Features drag and drop reordering, sorting cards into "Know" and "Still learning" piles, and set importing/exporting.`}
+              title="Web osu!mania"
+              subtitle="Rhythm Game Web Port"
+              imageSrc="/projects/web-osu-mania.jpg"
+              summary={`A web port of the gamemode osu!mania from the popular rhythm game osu!. Combines web design, game design, and audio processing to deliver a seamless experience.`}
               builtWith={
                 <>
                   <SiNextdotjs title="Next JS" />
                   <SiTypescript title="TypeScript" />
                   <SiTailwindcss title="Tailwind CSS" />
-                  <SiPrisma title="Prisma" />
+                  <Image priority src={PixiJs} alt="Pixi JS" title="Pixi JS" />
                 </>
               }
-              builtIn="July 2024"
-              demoHref="https://hk-memorease.vercel.app"
-              codeHref="https://github.com/HecticKiwi/Memorease"
+              builtIn="August 2024"
+              demoHref="https://web-osu-mania.vercel.app/"
+              codeHref="https://github.com/HecticKiwi/Web-Osu-Mania"
               reverse
             />
           </li>
