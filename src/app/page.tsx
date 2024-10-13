@@ -154,7 +154,7 @@ export default function Home() {
                 </>
               }
               builtIn="August 2024"
-              demoHref="https://web-osu-mania.vercel.app/"
+              demoHref="https://web-osu-mania.pages.dev/"
               codeHref="https://github.com/HecticKiwi/Web-Osu-Mania"
               reverse
             />
