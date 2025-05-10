@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode } from "react";
 import { Slide, ToastContainer } from "react-toastify";
 
 const ToastifyProvider = ({ children }: { children: ReactNode }) => {

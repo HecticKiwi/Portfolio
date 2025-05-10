@@ -9,8 +9,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dannyduong.vercel.app"),
   title: "Danny Duong",
-  description: "Danny's Portfolio Site",
+  description:
+    "Full-time software developer and rhythm game enthusiast. Creator of Web osu!mania and other interactive web experiences.",
 };
 
 export default function RootLayout({

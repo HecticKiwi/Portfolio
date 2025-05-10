@@ -36,7 +36,7 @@ export default function Home() {
           Danny Duong
         </h1>
         <h2 className="text-xl text-neutral-500 sm:text-2xl">
-          Student and Web Developer.
+          Professional Web Developer
         </h2>
 
         <ScrollArrows />
@@ -57,8 +57,16 @@ export default function Home() {
 
         <div className="space-y-4 leading-relaxed">
           <p>
-            Nice to meet you! I&apos;m Danny, a fifth-year software engineering
-            student at the University of Calgary and a passionate web developer.
+            Nice to meet you! I&apos;m Danny, a full-time software developer at{" "}
+            <a
+              href="https://www.energytoolbase.com/"
+              target="_blank"
+              className="inline-flex items-center gap-1 text-sky-500 hover:underline"
+            >
+              Energy Toolbase
+            </a>{" "}
+            with a passion for building performant and accessible web
+            applications.
           </p>
           <p>
             My programming journey started in junior high with Scratch, a
@@ -69,14 +77,23 @@ export default function Home() {
             them to play the actual game 😉).
           </p>
           <p>
-            Nowadays, I build web applications to extend my formal education
-            with self-learned web-dev skills. When I&apos;m not coding, I&apos;m
-            listening to music or playing rhythm games.
+            These early experiences evolved into a deep interest in web
+            development, which I pursue even outside of work. In my spare time I
+            maintain{" "}
+            <a
+              href="https://web-osu-mania.pages.dev/"
+              target="_blank"
+              className="inline-flex items-center gap-1 text-sky-500 hover:underline"
+            >
+              Web osu!mania
+            </a>
+            , a rhythm game that runs entirely in the browser. Working on it has
+            strengthened my skills in performance optimization, graphics
+            rendering, and managing real-time user interactions.
           </p>
           <p>
-            After graduating from the University of Calgary, I will return to
-            Energy Toolbase no longer as an intern but as a full-time software
-            developer.
+            When I&apos;m not coding, you'll likely find me listening to music
+            or playing rhythm games.
           </p>
         </div>
       </section>
