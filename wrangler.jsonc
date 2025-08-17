@@ -29,4 +29,9 @@
         //   "bucket_name": "<BUCKET_NAME>",
         // },
     ],
+    "observability": {
+        "logs": {
+            "enabled": true
+        }
+    }
 }
