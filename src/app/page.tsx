@@ -21,6 +21,8 @@ import {
 } from "react-icons/si";
 import PixiJs from "./pixi.svg";
 
+export const dynamic = "force-static";
+
 export default function Home() {
   return (
     <main className="text-lg text-neutral-300">
