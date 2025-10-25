@@ -1,5 +1,6 @@
 import ToastifyProvider from "@/providers/toastifyProvider";
 import { cn } from "@/utils/cn";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
@@ -29,7 +30,10 @@ export default function RootLayout({
       />
 
       <body className={cn(inter.className, "bg-black")}>
-        <ToastifyProvider>{children}</ToastifyProvider>
+        <ToastifyProvider>
+          {children}
+          <Analytics />
+        </ToastifyProvider>
       </body>
     </html>
   );
